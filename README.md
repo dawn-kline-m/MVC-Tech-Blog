@@ -66,6 +66,6 @@ The following animation demonstrates the application functionality:
 
 ## Deliverables
 
-The URL of the functional, deployed application to Heroku:
+The URL of the functional, deployed application to Heroku: https://dashboard.heroku.com/apps/mighty-savannah-56336
 
 The URL of the GitHub repository, with a unique name and a readme describing the project: https://github.com/dawn-kline-m/MVC-Tech-Blog
