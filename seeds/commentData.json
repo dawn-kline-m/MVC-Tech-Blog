@@ -1,0 +1,17 @@
+[
+    {
+        "techPost_id": 1,
+        "description": "The hottest corner of the robotic space right now is not the robots themselves",
+        "user_id": 1
+    },
+    {
+        "techPost_id": 2,
+        "description": "Chatgpt is here to stay",
+        "user_id": 2
+    },
+    {
+        "techPost_id": 3,
+        "description": "Amazon is developing a Lord of the Rings MMO",
+        "user_id": 2
+    }
+]
