@@ -4,14 +4,29 @@ const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
   try {
-    const newProject = await Project.create({
+    const newTechPost = await TechPost.create({
       ...req.body,
       user_id: req.session.user_id,
     });
 
     res.status(200).json(newTechPost);
   } catch (err) {
-    res.status(400).json(err);
+    res.status(500).json(err);
+  }
+});
+
+router.put('/:id', withAuth, async (req, res) => {
+  try {
+    const editTechPost = await TechPost.update(req.body, {
+      where: {
+        id: req.params.id
+      }
+
+    });
+
+    res.status(200).json(editTechPost);
+  } catch (err) {
+    res.status(500).json(err);
   }
 });
 

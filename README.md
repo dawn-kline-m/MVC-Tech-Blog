@@ -5,6 +5,7 @@
 - [User Specifications](#user-specifications)
 - [Functionality](#functionality)
 - [Mock-Up](#mock-up)
+- [Screenshots](#screenshots)
 - [Deliverables](#deliverables)
 
 ## Description
@@ -64,8 +65,12 @@ The following animation demonstrates the application functionality:
 
 ![Animation cycles through signing into the app, clicking on buttons, and updating blog posts.](./Assets/14-mvc-homework-demo-01.gif) 
 
+## Screenshots
+![Image showing the create or delete post page ](./img/Screenshot-create-or-delete-post.png)
+![Image showing the login-signup page.](./img/Screenshot-login-signup.png)
+![Image showing The Tech Blog.](./img/Screenshot-The-tech-Blog.png)
 ## Deliverables
 
-The URL of the functional, deployed application to Heroku: https://dashboard.heroku.com/apps/mighty-savannah-56336
+The URL of the functional, deployed application to Heroku: https://mighty-savannah-56336.herokuapp.com/login
 
 The URL of the GitHub repository, with a unique name and a readme describing the project: https://github.com/dawn-kline-m/MVC-Tech-Blog

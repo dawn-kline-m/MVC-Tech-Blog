@@ -29,7 +29,7 @@ router.get('/', async (req, res) => {
 
 router.get('/project/:id', async (req, res) => {
   try {
-    const techPostData = await Project.findByPk(req.params.id, {
+    const techPostData = await TechPost.findByPk(req.params.id, {
       include: [
         {
           model: User,
@@ -41,6 +41,29 @@ router.get('/project/:id', async (req, res) => {
     const project = techPostData.get({ plain: true });
 
     res.render('project', {
+      ...project,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
+router.get('/edit/:id', async (req, res) => {
+  try {
+    const techPostData = await TechPost.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
+    });
+
+    const project = techPostData.get({ plain: true });
+
+    res.render('edit', {
       ...project,
       logged_in: req.session.logged_in
     });
